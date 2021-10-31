@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor AI</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style2.css">    
+    <link rel="icon" href="images/tutor 2.png" type="image/icon type">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="home.html" class="logo"><img src="images/tf1.png" alt="Tutor ai" width="120px"></a>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="#features">Features</a>
+        <a href="#explore">Explore</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home background" id="home">
+
+    <div class="content">
+        <h1>Welcome to Tutor AI</h1>
+        <h3>Learn with fun</h3>
+        <p>Tutor AI brings the best experience for your child, 
+            <br>to learn with fun.</p>
+        <a href="#explore" class="btn">Discover More</a>
+    </div>
+
+    <div class="image">
+        <img src="images/monkey-01.png" width="600">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features up-and-down" id="features">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/left-icon1.png" alt="">
+            <div class="info">
+                <h3>Interactive UI</h3>
+                <p>The forum is kid-friendly, and the user interface was designed keeping early education in mind. The colours selected are in accordance with the colour theory for children.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/flowchart.png" alt="">
+            <div class="info">
+                <h3>Flowcharts</h3>
+                <p>The platform comes with easy-to-grasp flowcharts and maps to learn alphabets, numbers, colours, shapes, animals, birds, and objects.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/num.png" alt="">
+            <div class="info">
+                <h3>Rhyme Room</h3>
+                <p>Nursery rhymes and limericks for children can be found in the Rhyme Room area. It will make learning more enjoyable and fascinating. We are also excited to introduce traditional folk tunes and children's music.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <img class="stick" src="images/border.png" alt="" width="380px" height="540px">
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/right-icon1.png" alt="">
+            <div class="info">
+                <h3>Read-Aloud</h3>
+                <p>The Read Aloud tool will improve children's hearing and language abilities by giving them with accurate word and letter pronunciation.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/right-icon3.png" alt="">
+            <div class="info">
+                <h3>Integrated Machine Learning</h3>
+                <p>Our AI tool facilitates children with the visualizing skill, to identify the objects near them. It also briefly describes the properties of the object, making it more effective for learners.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/responsive.png" alt="">
+            <div class="info">
+                <h3>Responsive Website</h3>
+                <p>Tutor AI is not only available in website mode but also responsive for mobile phones, in app view. The feature gives access to use the application in all devices, of all sizes. 
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- explore section starts  -->
+
+<section class="explore background" id="explore">
+
+    <h1 class="heading">Explore</h1>
+
+    <div class="box-container">
+
+        <div class="box" style="background: url(images/card-bg1.png) no-repeat;">
+            <h3>Learn</h3>
+            <p>The Learn Section provides predefined learning modules for children. Under the learn section, we find modules for english alphabets, numbers, colours, animals and birds. We also provide Read-Aloud feature to make verbal and visual learning fun.</p>
+            <a href="Learn.html" class="btn">Learn</a>
+        </div>
+
+        <div class="box" style="background: url(images/card-bg2.png) no-repeat;">
+            <h3>Rhyme Room</h3>
+            <p>The Rhyme Room section is for nursery rhymes and limericks for children. It will make learning fun and interesting. We also look forward to introducing traditional folk songs and music for children. 
+            </p>
+            <a href="rhyme.html" class="btn">Listen</a>
+        </div>
+
+        <div class="box" style="background: url(images/card-bg2.png) no-repeat;">
+            <h3>Learn Shapes</h3>
+            <p>The Learn Shapes section, helps identify children different kinds of shapes. With development and advancement, we plan to add computer vision to the section, so that children can identify shapes using ML.</p>
+            <a href="obj.html" class="btn">Identify</a>
+        </div>
+
+        <div class="box" style="background: url(images/card-bg3.png) no-repeat;">
+            <h3>Detect Objects</h3>
+            <p>The Detect Object section is a machine learning based section where we have integrated computer vision to enable object detection for children. Children can put forward any object and the model will help identify the objects by using camera.</p>
+            <a href="#" class="btn">Detect</a>
+        </div>
+
+    </div>
+
+    <div class="box-container">
+        <a href="Discover.html" class="bt">Explore</a>
+    </div>
+
+</section>
+
+<!-- explore section ends -->
+
+<!-- footer section  -->
+
+<div class="footer">
+    Made by <span> Team Abhigyan </span> | All rights reserved.
+</div>
+
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('nav-toggle');
+});
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('nav-toggle');
+}
+
+</script>
+
+</body>
+</html>

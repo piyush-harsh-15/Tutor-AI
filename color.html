@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colours | Tutor AI</title>
+    <link rel="icon" href="images/tutor 2.png" type="image/icon type">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<style>
+    .plbtn {
+        width: 80px;
+        height: 70px;
+        margin: 10px;
+        border-radius: 30px;
+        font-size: large;
+        color: white;
+    }
+
+    .plbtn:hover {
+        box-shadow: 0 0 5px black;
+    }
+
+    #colordiv>.plbtn {
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="home.html" class="logo"><img src="images/tf1.png" alt="Tutor ai" width="120px"></a>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="Discover.html">Explore</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<section class="explore background" id="explore">
+
+    <h1 class="heading">Colours</h1>
+
+    <div class="box-container">
+        
+            <!--Letter Mode-->
+            <div id="colordiv">
+
+                    <button id="clired" style="background-color: red" class="plbtn" onclick= "cr()">Red</button>
+                    <script>
+                        function cr(){
+                            var audio =  new Audio('audios/Color/Red.mp3');
+                            audio.play();
+                        }
+                    </script>
+
+                    <button id="cliblue" style="background-color: blue" class="plbtn" onclick= "cb()">Blue</button>
+                    <script>
+                        function cb(){
+                            var audio =  new Audio('audios/Color/Blue.mp3');
+                            audio.play();
+                        }
+                    </script>
+
+                    <button id="clipink" style="background-color: pink" class="plbtn" onclick= "cp()">Pink</button>
+                    <script>
+                        function cp(){
+                            var audio =  new Audio('audios/Color/Pink.mp3');
+                            audio.play();
+                        }
+                    </script>
+
+                    <button id="cligreen" style="background-color: green" class="plbtn" onclick= "cg()">Green</button>
+                    <script>
+                        function cg(){
+                            var audio =  new Audio('audios/Color/Green.mp3');
+                            audio.play();
+                        }
+                    </script>
+                <br>
+
+                <button id="cliorange" style="background-color: orangered" class="plbtn" onclick= "co()">Orange</button>
+                    <script>
+                        function co(){
+                            var audio =  new Audio('audios/Color/Orange.mp3');
+                            audio.play();
+                        }
+                    </script>
+
+                    <button id="cliyellow" style="background-color: yellow" class="plbtn" onclick= "cy()">Yellow</button>
+                    <script>
+                        function cy(){
+                            var audio =  new Audio('audios/Color/Yellow.mp3');
+                            audio.play();
+                        }
+                    </script>
+
+                    <button id="cliwhite" style="background-color: White" class="plbtn" onclick= "cw()">White</button>
+                    <script>
+                        function cw(){
+                            var audio =  new Audio('audios/Color/White.mp3');
+                            audio.play();
+                        }
+                    </script>
+
+                    <button id="cliblack" style="background-color: Black" class="plbtn" onclick= "cbl()">Black</button>
+                    <script>
+                        function cbl(){
+                            var audio =  new Audio('audios/Color/Black.mp3');
+                            audio.play();
+                        }
+                    </script>
+                <br>
+            </div>
+
+    </div>
+    
+    <div class="box-container">
+        <a href="Learn.html" class="bt">Back</a>
+    </div>
+
+</section>
+
+
+<!-- footer section  -->
+<div class="footer">
+    Made by <span> Team Abhigyan </span> | All rights reserved.
+</div>
+
+</body>
+</html>

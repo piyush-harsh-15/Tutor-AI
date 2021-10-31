@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds | Tutor AI</title>
+    <link rel="icon" href="images/tutor 2.png" type="image/icon type">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<style>
+
+    body {
+        align-content: center;
+        text-align: center;
+    }
+
+    .plim {
+        width: 300px;
+        height: 300px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .plim:hover {
+        box-shadow: 0 0 5px black;
+    }
+
+</style>
+
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="home.html" class="logo"><img src="images/tf1.png" alt="Tutor ai" width="120px"></a>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="Discover.html">Explore</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<section class="explore background" id="explore">
+
+    <h1 class="heading">Birds</h1>
+
+    <div class="box-container">
+            <!--Letter Mode-->
+            <div class="box-container">
+                <!--Letter Mode-->
+                <div id="birddiv">
+                    <h2>CROW</h2>
+                    <button id="clidog" class="plim" style="background-color:white;" onclick= "ccrow()">
+                        <img src="images/crow.png" class="plim">
+                    </button>
+                    <script>
+                        function ccrow(){
+                            var audio =  new Audio('audios/birds/crow.wav');
+                            audio.play();
+                        }
+                    </script>
+
+                    <h2>PEACOCK</h2>
+                    <button id="clicat" class="plim" style="background-color:white;" onclick= "cpeacock()">
+                        <img src="images/peacock.png" class="plim">
+                    </button>
+                    <script>
+                        function cpeacock(){
+                            var audio =  new Audio('audios/birds/peacock.wav');
+                            audio.play();
+                        }
+                    </script>
+
+                    <h2>PARROT</h2>
+                    <button id="clicow" class="plim" style="background-color:white;" onclick= "cparrot()">
+                        <img class="plim" src="images/parrot.png">
+                    </button>
+                    <script>
+                        function cparrot(){
+                            var audio =  new Audio('audios/birds/parrot.wav');
+                            audio.play();
+                        }
+                    </script>
+
+                    <h2>OWL</h2>
+                    <button id="cliduck" class="plim" style="background-color:white;" onclick= "cowl()">
+                        <img class="plim" src="images/owl.png">
+                    </button>
+                    <script>
+                        function cowl(){
+                            var audio =  new Audio('audios/birds/Owl.mp3');
+                            audio.play();
+                        }
+                    </script>
+                </div>
+    
+            </div>
+        </div>
+    <div class="box-container">
+        <a href="Learn.html" class="bt">Back</a>
+    </div>
+
+</section>
+
+
+<!-- footer section  -->
+<div class="footer">
+    Made by <span> Team Abhigyan </span> | All rights reserved.
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="work.js"></script>
+
+</body>
+</html>

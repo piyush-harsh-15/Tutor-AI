@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals | Tutor AI</title>
+    <link rel="icon" href="images/tutor 2.png" type="image/icon type">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<style>
+
+    body {
+        align-content: center;
+        text-align: center;
+    }
+
+    .plim {
+        width: 300px;
+        height: 300px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .plim>.plim {
+        width: 290px;
+        height: 290px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .plim:hover {
+        box-shadow: 0 0 5px black;
+    }
+
+
+    #animaldiv {
+        margin-top: 0px;
+    }
+</style>
+
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="home.html" class="logo"><img src="images/tf1.png" alt="Tutor ai" width="120px"></a>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="Discover.html">Explore</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<section class="explore background" id="explore">
+
+    <h1 class="heading">Animals</h1>
+
+    <div class="box-container">
+            <!--Letter Mode-->
+            <div id="animaldiv">
+                <h2>CAT</h2>
+                <button class="plim" onclick="ac()">
+                    <img src="images/cat.jpeg" class="plim">
+                </button>
+                <script>
+                    function ac(){
+                        var audio =  new Audio('audios/Animals/Cat.mp3');
+                        audio.play();
+                        }
+                </script>
+
+                <h2>DOG</h2>
+                <button class="plim" onclick="ad()">
+                    <img src="images/dog.jpeg" class="plim">
+                </button>
+                <script>
+                    function ad(){
+                        var audio =  new Audio('audios/Animals/Dog.mp3');
+                        audio.play();
+                        }
+                </script>
+                
+                <h2>COW</h2>
+                <button class="plim" onclick="acw()">
+                    <img src="images/cow.jpg" class="plim">
+                </button>
+                <script>
+                    function acw(){
+                        var audio =  new Audio('audios/Animals/Cow.mp3');
+                        audio.play();
+                        }
+                </script>
+                <br>
+
+                <h2>ELEPHANT</h2>
+                <button class="plim" onclick="ae()">
+                    <img src="images/elephant.jpg" class="plim">
+                </button>
+                <script>
+                    function ae(){
+                        var audio =  new Audio('audios/Animals/elephant.mp3');
+                        audio.play();
+                        }
+                </script>
+
+                <h2>GOAT</h2>
+                <button class="plim" onclick="ag()">
+                    <img src="images/goat.jpeg" class="plim">
+                </button>
+                <script>
+                    function ag(){
+                        var audio =  new Audio('audios/Animals/Goat.mp3');
+                        audio.play();
+                        }
+                </script>
+
+                <h2>HORSE</h2>
+                <button class="plim" onclick="ap()">
+                    <img src="images/horse.jpg" class="plim">
+                </button>
+                <script>
+                    function ap(){
+                        var audio =  new Audio('audios/Animals/Pony.mp3');
+                        audio.play();
+                        }
+                </script>
+
+                <h2>TIGER</h2>
+                <button class="plim" onclick="at()">
+                    <img src="images/tiger.jpg" class="plim">
+                </button>
+                <script>
+                    function at(){
+                        var audio =  new Audio('audios/Animals/Tiger.mp3');
+                        audio.play();
+                        }
+                      </script>
+
+            </div>
+
+    </div>
+    
+    <div class="box-container">
+        <a href="Learn.html" class="bt">Back</a>
+    </div>
+
+</section>
+
+
+<!-- footer section  -->
+<div class="footer">
+    Made by <span> Team Abhigyan </span> | All rights reserved.
+</div>
+
+</body>
+</html>

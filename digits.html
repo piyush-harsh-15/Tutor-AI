@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digits | Tutor AI</title>
+    <link rel="icon" href="images/tutor 2.png" type="image/icon type">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<style>
+    button {
+        outline: none;
+        color: crimson;
+        font-size: 50px;
+        background-color: transparent;
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .plbtn {
+        width: 80px;
+        height: 70px;
+        margin: 10px;
+    }
+
+    .plbtn:hover {
+        box-shadow: 0 0 5px black;
+    }
+
+    #modeback {
+        color: black;
+    }
+
+    #modeback:hover {
+        box-shadow: 0 0 10px black;
+    }
+</style>
+
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="home.html" class="logo"><img src="images/tf1.png" alt="Tutor ai" width="120px"></a>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="Discover.html">Explore</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<section class="explore background" id="explore">
+
+    <h1 class="heading">Digits</h1>
+    <h3 class="heading">0 to 9</h3>
+
+    <div class="box-container">
+            <!--Letter Mode-->            
+            <div id="numberdiv">
+                <button id="cli0" class="plbtn" onclick= "c0()">0</button>
+                <script>
+                    function c0(){
+                        var audio =  new Audio('audios/Number/0.mp3');
+                        audio.play();
+                    }
+                </script>
+
+                <button id="cli1" class="plbtn" onclick= "c1()">1</button>
+                <script>
+                    function c1(){
+                        var audio =  new Audio('audios/Number/1.mp3');
+                        audio.play();
+                    }
+                </script>
+
+                <button id="cli2" class="plbtn" onclick= "c2()">2</button>
+                <script>
+                    function c2(){
+                        var audio =  new Audio('audios/Number/2.mp3');
+                        audio.play();
+                    }
+                </script>
+
+                <button id="cli3" class="plbtn" onclick= "c3()">3</button>
+                <script>
+                    function c3(){
+                        var audio =  new Audio('audios/Number/3.mp3');
+                        audio.play();
+                    }
+                </script>
+
+                <button id="cli4" class="plbtn" onclick= "c4()">4</button>
+                <script>
+                    function c4(){
+                        var audio =  new Audio('audios/Number/4.mp3');
+                        audio.play();
+                    }
+                </script>
+
+                <button id="cli5" class="plbtn" onclick= "c5()">5</button>
+                <script>
+                    function c5(){
+                        var audio =  new Audio('audios/Number/5.mp3');
+                        audio.play();
+                    }
+                </script>
+
+                <button id="cli6" class="plbtn" onclick= "c6()">6</button>
+                <script>
+                    function c6(){
+                        var audio =  new Audio('audios/Number/6.mp3');
+                        audio.play();
+                    }
+                </script>
+
+                <button id="cli7" class="plbtn" onclick= "c7()">7</button>
+                <script>
+                    function c7(){
+                        var audio =  new Audio('audios/Number/7.mp3');
+                        audio.play();
+                    }
+                </script>
+
+                <button id="cli8" class="plbtn" onclick= "c8()">8</button>
+                <script>
+                    function c8(){
+                        var audio =  new Audio('audios/Number/8.mp3');
+                        audio.play();
+                    }
+                </script>
+
+                <button id="cli9" class="plbtn" onclick= "c9()">9</button>
+                <script>
+                    function c9(){
+                        var audio =  new Audio('audios/Number/9.mp3');
+                        audio.play();
+                    }
+                </script>
+
+            </div>
+
+    </div>
+    
+    <div class="box-container">
+        <a href="Learn.html" class="bt">Back</a>
+    </div>
+
+</section>
+
+
+<!-- footer section  -->
+<div class="footer">
+    Made by <span> Team Abhigyan </span> | All rights reserved.
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="work.js"></script>
+
+</body>
+</html>

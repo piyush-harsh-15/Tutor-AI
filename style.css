@@ -1,0 +1,246 @@
+:root{
+    --red: #54c1fb;
+  }
+  
+  *{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: cursive;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline:none; border:none;
+    transition: all .2s ease-out;
+  }
+  
+  *::selection{
+    background:var(--red);
+    color:#fff;
+  }
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  section{
+    min-height: 100vh;
+    padding:0 7%;
+    padding-top: 11rem;
+    padding-bottom: 9rem;
+  }
+  
+  .background{
+    background:url(../images/background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .home .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30rem;
+    flex-wrap: wrap;
+  }
+
+  .bt{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding:.7rem 2rem;
+    border-radius: 2rem;
+    background:var(--red);
+    color:#fff;
+    font-size: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  .bt:hover{
+    background:#333;
+  }
+  
+  .heading{
+    text-align: center;
+    color:var(--red);
+    padding:1rem;
+    font-size: 3.5rem;
+  }
+  
+  header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background:url(../images/header-bg.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 10000;
+    padding:1.5rem 7%;
+    padding-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .logo{
+    font-size: 2.5rem;
+    color:#333;
+  }
+  
+  header .logo i{
+    padding-right: .5rem;
+    color:var(--red);
+  }
+  
+  header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color:#333;
+  }
+  
+  header .navbar a:hover{
+    color:var(--red);
+  }
+
+  #menu-bars{
+    font-size: 3rem;
+    border:.1rem solid #333;
+    color:#333;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    display: none;
+  }
+  .footer{
+    position: relative;
+    text-align: center;
+    padding:2.5rem 1.5rem;
+    font-size: 2rem;
+    color:#666;
+  }
+  
+  .footer span{
+    color:var(--red);
+  }
+  
+  .footer::before{
+    content:'';
+    position: absolute;
+    top:-8rem; left: 50%;
+    transform: translateX(-50%);
+    background:url(../images/img-top.png) no-repeat;
+    background-size: cover;
+    height: 8rem;
+    width:100%;
+  }
+  
+  
+  @media (max-width:1200px){
+  
+    html{
+      font-size: 55%;
+    }
+  
+    header{
+      padding:1.5rem 3%;
+      padding-bottom: 6rem;
+    }
+  
+    section{
+      padding:0 3%;
+      padding-top: 11rem;
+      padding-bottom: 9rem;
+    }
+  
+  }
+  
+  @media (max-width:768px){
+  
+    #menu-bars{
+      display: block;
+    }
+  
+    header .navbar{
+      position: absolute;
+      top:70%; left: 0; right: 0;
+      height: calc(100vh - 70%);
+      border-top: .2rem solid #333;
+      background:url(../images/card-bg1.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .navbar.nav-toggle{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  
+    header .navbar a{
+      font-size: 2.5rem;
+      margin:2rem 0;
+      display: block;
+      text-align: center;
+    }
+  
+    .home .image img{
+      display: none;
+    }
+  
+    .home .content{
+      text-align: center;
+    }
+  
+    .home .content h1{
+      font-size: 3.5rem;
+    }
+  
+    .home .content h3{
+      font-size: 2.5rem;
+    }
+  
+    .home .content p{
+      font-size: 1.5rem;
+    }
+  
+    .features{
+      flex-flow: column;
+    }
+  
+    .features .stick{
+      display: none;
+    }
+  
+    .about .image img{
+      display: none;
+    }
+  
+    .about .content{
+      text-align: center;
+    }
+  
+    .contact .image img{
+      display: none;
+    }
+  
+    .contact .row{
+      flex-flow:column;
+      align-items: flex-start;
+    }
+  
+  }
+  
+  @media (max-width:450px){
+  
+    html{
+      font-size: 50%;
+    }
+  
+    .features .box-container,
+    .features .box-container:first-child{
+      text-align: center;
+    }
+  
+    .features .box-container .box,
+    .features .box-container:first-child .box{
+      flex-flow: column;
+    }
+  
+  }
